@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VisionVault | Discover Stunning Visuals</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  
+  <!-- Branded Header -->
+  <header class="header">
+    <div class="logo-container">
+      <h1 class="app-title">VisionVault</h1>
+      <p class="tagline">Unlock a world of high-definition imagery instantly.</p>
+    </div>
+
+    <!-- Search Form -->
+    <form id="search-form" class="search-form">
+      <div class="input-group">
+        <label for="search-input" class="sr-only">Search images</label>
+        <input 
+          type="search" 
+          id="search-input" 
+          placeholder="Search topics, landscapes, art..." 
+          required
+        />
+        <button type="submit" id="search-button">Search</button>
+      </div>
+    </form>
+  </header>
+
+  <main class="main-content">
+    <!-- Extra Feature 1: Category Chips -->
+    <section class="categories-section" aria-label="Suggested topics">
+      <span class="chip-label">Popular:</span>
+      <div class="chips-container">
+        <button type="button" class="chip">Nature</button>
+        <button type="button" class="chip">Architecture</button>
+        <button type="button" class="chip">Technology</button>
+        <button type="button" class="chip">Minimalism</button>
+      </div>
+    </section>
+
+    <!-- Extra Feature 2: Result-Count Placeholder -->
+    <div class="status-bar">
+      <p id="status-text">Ready to search</p>
+    </div>
+
+    <!-- Extra Feature 3: Empty-State Message -->
+    <div id="empty-state" class="empty-state">
+      <p>✨ Type a topic above or pick a category to explore images.</p>
+    </div>
+
+    <!-- Responsive CSS Grid Container (Deliberately empty for Part 1) -->
+    <section id="results" class="results-grid"></section>
+  </main>
+
+  <!-- Script placed before closing body tag -->
+  <script src="script.js"></script>
+</body>
+</html>
